@@ -1,0 +1,24 @@
+private static void permutations(char[] ch, int currentIndex){
+	int n = ch.lenght;
+	for(int i = currntIndex, i < n, i++){
+		swap(ch, currentIndex, i);
+		permutations(ch, currentIndex+1, n);
+		swap(str, index, i);
+	}
+}
+
+private static void swap(char[] ch,int i,int j) {
+        char temp = ch[i];
+        ch[i] = ch[j];
+        ch[j] = temp;
+}
+
+public static void main(String[] args){
+	char[] ch = {a, b, c};
+	permutations(ch, 0);
+}
+
+/*
+* training with recursive functions.
+* Code using as entry a array of letters and will return all possible distinct strings using those letters 
+*/
